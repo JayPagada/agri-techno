@@ -1,0 +1,18 @@
+.table ul{
+    display: none;
+}
+.table{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.table tr td {
+    padding:10px;
+}
+
+tr{
+    margin: 10px;
+}

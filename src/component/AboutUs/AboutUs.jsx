@@ -10,7 +10,6 @@ const { Meta } = Card;
 const AboutUs = () => {
   return (
     <div className="containerAbout">
-      <h1>About Agri Techno</h1>
       <div className="para">
         In the Agri-techno we give the all type of information in the
         Agri-techno we give crop management,products&all type of Services.

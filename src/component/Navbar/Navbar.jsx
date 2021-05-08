@@ -22,11 +22,12 @@ const Navbar = ()=>{
                         Product&Services
                         </NavLink>
                     </Menu.Item>
-
+                    
                     <Menu.Item key="Marketyard">
                         <NavLink to="/AgriTechno/Marketyard" >
                         Marketyard
                         </NavLink>
+
                     </Menu.Item>
 
                     <Menu.Item key="BuyerSeller">
@@ -48,8 +49,8 @@ const Navbar = ()=>{
                     </Menu.Item>
 
                     <Menu.Item key="Contact">
-                        <NavLink to="/AgriTechno/Contact" >
-                        Contact
+                        <NavLink to="/AgriTechno/ContactUs" >
+                        Contact Us
                         </NavLink>
                     </Menu.Item>
 

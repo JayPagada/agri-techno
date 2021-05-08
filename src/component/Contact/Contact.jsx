@@ -28,12 +28,11 @@ const Contact = () => {
 
   return (
     <div className="containerContact">
-      <h1>Contact Us</h1>
       <section className="mb-4 container card ">
         <p className="text-center ">
-          Do you have any questions? Please do not hesitate to contact us
+         <b>Do you have any questions? Please do not hesitate to contact us
           directly. Our team will come back to you within a matter of hours to
-          help you.
+          help you.</b> 
         </p>
       </section>
       <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>

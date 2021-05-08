@@ -6,3 +6,16 @@
     min-height: 800px;
     overflow: hidden;
 }
+.titleHeader{
+    display: flex;
+    height:100px;
+    width: 100%;
+    background-color: rgb(116, 68, 29);
+    text-align: center;
+    justify-content: center;
+}
+
+.titleHeader h1{
+    font-size: 2em;
+    color: rgb(224, 221, 221);
+}
