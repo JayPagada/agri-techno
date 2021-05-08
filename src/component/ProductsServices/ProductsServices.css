@@ -1,0 +1,25 @@
+.ProductsCard{
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-top: 50px;
+}
+ .ProductsCard .serviceCard1{
+    display: grid;
+    grid-template-columns: auto auto;
+    }
+.ProductsCard .serviceCard2{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.ProductsCard .serviceCard{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 30px;
+}
+.serviceCard h1{
+    font-size: 1.5em;
+    margin-top: -3px;
+}
+.serviceCard .discription{
+    margin-left: 10px;
+}

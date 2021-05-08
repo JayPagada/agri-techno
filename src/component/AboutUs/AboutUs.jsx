@@ -21,57 +21,54 @@ const AboutUs = () => {
       </div>
       <div className="maincard">
         <div className="twocard1">
-          <div className="card1">
+          <div className="card1 card">
             <Card
               hoverable
               style={{ width: 500, marginLeft: 50 }}
               cover={<img alt="example" src={image1} />}
             >
-              <Meta
-                title="Europe Street beat"
-                description="I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you."
-              />
-            </Card>
+
+              <div className="title">Europe Street beat</div>
+              <div className="description">  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+              </div>
+              </Card>
           </div>
 
-          <div className="card2">
+          <div className="card2 card">
             <Card
               hoverable
-              style={{ width: 500, marginLeft: 50 }}
+              style={{ width: 500}}
               cover={<img alt="example" src={image2} />}
             >
-              <Meta
-                title="Europe Street beat"
-                description="I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you."
-              />
+              <div className="title">Europe Street beat</div>
+              <div className="description">  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+              </div>
             </Card>
           </div>
         </div>
 
         <div className="twocard2">
-          <div className="card3">
+          <div className="card3 card">
             <Card
               hoverable
-              style={{ width: 500, marginLeft: 50 }}
+              style={{ width: 500 }}
               cover={<img alt="example" src={image3} />}
             >
-              <Meta
-                title="Europe Street beat"
-                description="I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you."
-              />
+              <div className="title">Europe Street beat</div>
+              <div className="description">  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+              </div>
             </Card>
           </div>
 
-          <div className="card4">
+          <div className="card4 card">
             <Card
               hoverable
-              style={{ width: 500, marginLeft: 50 }}
+              style={{ width: 500}}
               cover={<img alt="example" src={image4} />}
             >
-              <Meta
-                title="Europe Street beat"
-                description="I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you."
-              />
+              <div className="title">Europe Street beat</div>
+              <div className="description">  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+              </div>
             </Card>
           </div>
         </div>
