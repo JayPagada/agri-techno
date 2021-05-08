@@ -12,43 +12,43 @@ const Navbar = ()=>{
             </div>
             <Menu theme="dark" mode="horizontal" className="menuItem">
                     <Menu.Item key="Home">
-                        <NavLink to="/Home" >
+                        <NavLink to="/AgriTechno/Home" >
                             Home
                         </NavLink>
                     </Menu.Item>
 
                     <Menu.Item key="ProductServices">
-                        <NavLink to="/ProductServices" >
+                        <NavLink to="/AgriTechno/ProductServices" >
                         Product&Services
                         </NavLink>
                     </Menu.Item>
 
                     <Menu.Item key="Marketyard">
-                        <NavLink to="/Marketyard" >
+                        <NavLink to="/AgriTechno/Marketyard" >
                         Marketyard
                         </NavLink>
                     </Menu.Item>
 
                     <Menu.Item key="BuyerSeller">
-                        <NavLink to="/BuyerSeller" >
+                        <NavLink to="/AgriTechno/BuyerSeller" >
                         Buyer&Seller
                         </NavLink>
                     </Menu.Item>
 
                     <Menu.Item key="Weather">
-                        <NavLink to="/Weather" >
+                        <NavLink to="/AgriTechno/Weather" >
                         Weather
                         </NavLink>
                     </Menu.Item>
 
                     <Menu.Item key="AboutUs">
-                        <NavLink to="/AboutUs" >
+                        <NavLink to="/AgriTechno/AboutUs" >
                         AboutUs
                         </NavLink>
                     </Menu.Item>
 
                     <Menu.Item key="Contact">
-                        <NavLink to="/Contact" >
+                        <NavLink to="/AgriTechno/Contact" >
                         Contact
                         </NavLink>
                     </Menu.Item>

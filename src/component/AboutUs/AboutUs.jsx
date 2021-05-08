@@ -9,7 +9,7 @@ import { Card } from "antd";
 const { Meta } = Card;
 const AboutUs = () => {
   return (
-    <div className="container">
+    <div className="containerAbout">
       <h1>About Agri Techno</h1>
       <div className="para">
         In the Agri-techno we give the all type of information in the
