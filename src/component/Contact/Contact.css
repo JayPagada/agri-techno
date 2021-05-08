@@ -1,0 +1,61 @@
+h1{
+    background-image:url('../../assete/farm.jpg');
+    margin-left: 0%;
+    margin-bottom: 0%;
+}
+section{
+   height: 100%;
+   width: 100%;
+}
+.md-form{
+    margin-top: 5px;
+}
+.row{
+    align-items: center;
+    
+}
+.first{
+    /* display:flex;
+    flex-direction: row; */
+    align-items: center;
+    margin-left: 615px;
+    margin-bottom: 20px;
+}
+.email{
+    margin-left: 10px;
+}
+.subject{
+    /* align-items: center; */
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.message{
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+button{
+    margin-top: 20px;
+    margin-left: 3px;
+}
+
+label{
+    font-size: large;
+}
+.list-unstyled{
+    list-style: none;
+}
+
+.col-md-3{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 20px;
+}
+
+.logo {
+    width: 220px;
+    height: 200px;
+    float: center;
+}
