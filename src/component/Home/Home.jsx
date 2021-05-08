@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Layout, Menu } from "antd";
-// import { LogoutOutlined } from '@ant-design/icons';
 import { NavLink } from "react-router-dom";
 import "./Home.css";
 import image from "../../assete/logo.png";
