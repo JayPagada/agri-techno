@@ -36,6 +36,7 @@ const Marketyard = () => {
       </div>
     </div>
   );
+  
 };  
 
 export default Marketyard;
