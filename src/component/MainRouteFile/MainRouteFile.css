@@ -5,6 +5,7 @@
 .content-layout .content-layout-section {
     min-height: 800px;
     overflow: hidden;
+    background-color: white;
 }
 .titleHeader{
     display: flex;

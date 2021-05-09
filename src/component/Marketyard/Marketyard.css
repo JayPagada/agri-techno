@@ -1,9 +1,12 @@
 .marketyardTitle h2{
     text-align: center;
 }
-/* .para1{
-    width: 80%;
-} */
+.para1{
+    margin-left: 30px;
+}
+.para2{
+    margin-left: 30px;
+}
 .marketYard .twobutton{
     width: 100%;
     display: flex;

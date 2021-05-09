@@ -1,8 +1,17 @@
+.buyingSelling {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buyingSelling h1{
+    font-size: 2em;
+}
 .buying{
     display: grid;
     grid-template-columns:auto auto auto;
     grid-gap: 30px;
-    margin-top: 50px;
+    margin-top: 10px;
     align-items: center;
     justify-content: center;
 }
@@ -22,4 +31,22 @@
 .buyingCard .buyingTitle{
     font-size: 20px;
     color: brown;
+}
+
+.Selling{
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.SellingCard{
+    display: grid;
+    background-color: #8d4c13;
+    z-index: 1;
+    width: 400px;
+    justify-content: center;
+}
+.SellingCard .buyingTitle{
+    font-size: 20px;
 }
