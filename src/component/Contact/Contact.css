@@ -3,3 +3,16 @@
    height: 100%;
    width: 100%;
 }
+
+.containerContact{
+   margin-left: 150px;
+}
+
+.containerContact button{
+   padding:5px 10px;
+   display:block;
+   width:120px;
+   border:1px solid black;
+   background-color: #54db54;
+   border-radius: 10px ;
+}
