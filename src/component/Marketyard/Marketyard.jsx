@@ -22,17 +22,16 @@ const Marketyard = () => {
         2) Special market for
         perishables. <br/> 
         3) Farmers, private persons can set up own market.<br/>  
-        4)Licensing norms relaxed. <br/> 
+        4) Licensing norms relaxed. <br/>
         5) Single market fee. <br/> 
-        6) APMC revenue to be kham je hoo
-        used for improving market infrastructure.<br/> 
+        6) APMC revenue to be used for improving market infrastructure.<br/>
       </div>
       <div className="marketyardTitle">
         <h2>MarketYards</h2>
       </div>
       <div className="twobutton">        
-            <button>Rajkot</button>       
-            <button>Gondal</button>
+            <button><b>Rajkot</b></button>
+            <button><b>Gondal</b></button>
       </div>
     </div>
   );

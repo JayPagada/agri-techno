@@ -16,8 +16,7 @@ const { Content } = Layout;
 const mainRouteFile = () => {
   const Location = window.location.pathname;
   const title = Location.replace("/AgriTechno/", "");
-  // if(title !== ){
-  // const titleHeader =  ()}
+
   return (
     <Layout className="content-layout">
       <Content className="content-layout-section">
@@ -35,26 +34,12 @@ const mainRouteFile = () => {
           <Route path="/AgriTechno/Marketyard" component={Marketyard}/>
           <Route path="/AgriTechno/Marketyard/Rajkot" component={Marketyard}/>
           <Route path="/AgriTechno/Marketyard/Gondal" component={Marketyard}/>
+          <Route path="/AgriTechno/ProductServices" component={ProductsServices}/>
+          <Route path="/AgriTechno/BuyerSeller" component={BuyerSeller}/>
         </Switch>
       </Content>
     </Layout>
   );
 };
-const mainRouteFile =()=>{
-
-    return (
-        <Layout className="content-layout">
-            <Content className="content-layout-section">
-                <Switch>
-                    <Route path="/AgriTechno/Home" component={HomeSub}/>
-                    <Route path="/AgriTechno/ProductServices" component={ProductsServices}/>
-                    <Route path="/AgriTechno/BuyerSeller" component={BuyerSeller}/>
-                    <Route path="/AgriTechno/Contact" component={Contact}/>
-                    <Route path="/AgriTechno/AboutUs" component={AboutUs}/>
-                </Switch>
-            </Content>
-        </Layout>
-    );
-}
 
 export default mainRouteFile;

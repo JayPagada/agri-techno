@@ -9,6 +9,9 @@ import ProductsServices from "./component/ProductsServices/ProductsServices";
 import BuyerSeller from "./component/BuyerSeller/BuyerSeller";
 import Weather from './component/Weather/Weather';
 import Marketyard from './component/Marketyard/Marketyard';
+import Login from './component/Login/Login';
+import Register from './component/Login/Register';
+
 function App() {
   return (
     <div className="App">
@@ -22,7 +25,8 @@ function App() {
       <Route path="/AgriTechno/AboutUs" exact component={AboutUs}/>
       <Route path="/AgriTechno/Weather" exact component={Weather}/>
       <Route path="/AgriTechno/Marketyard" exact component={Marketyard}/>
-
+      <Route path="/Login" exact component={Login}/>
+      <Route path="/Register" exact component={Register}/>
     </Switch>
     </div>
   );
