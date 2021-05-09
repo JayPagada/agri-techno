@@ -1,6 +1,8 @@
 import React from "react";
 import "./Register.css"
 import { Form, Input, InputNumber, Button } from 'antd';
+import {auth} from "../../Redux/Auth";
+import {useDispatch} from "react-redux";
 const Register = () => {
 
     const layout = {
@@ -21,21 +23,15 @@ const Register = () => {
             range: '${label} must be between ${min} and ${max}',
         },
     };
+    const dispatch =  useDispatch();
     const onFinish = (values) => {
-            console.log(values);
+            console.log( values.user.email ,values.password,values.user.name);
+        dispatch(auth(values.user.email,values.password ,values.user.name,true))
         };
 
     return(
     <div className="register">
         <h1>Register</h1>
-        {/*<form>*/}
-        {/*<input type="text" name="name" id="name" placeholder="NAME"/>*/}
-        {/*<input type="email" name="email" id="email" placeholder="EMAIL"/>*/}
-        {/*<input type="tel" name="phone" id="phone" placeholder="NUMBER"/>*/}
-        {/*<input type="password" name="password" id="password" placeholder="PASSWORD"/>*/}
-        {/*<input type="password" name="password" id="password" placeholder="RE-ENTER PASSWORD"/>*/}
-        {/*<input type="button" name="button" id="button" value="SUBMIT"/>*/}
-        {/*</form>*/}
         <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
             <Form.Item
                 name={['user', 'name']}
@@ -57,29 +53,12 @@ const Register = () => {
             >
                 <Input placeholder="Enter Your Email"/>
             </Form.Item>
-            <Form.Item
-                name={['user', 'phone']}
-                rules={[
-                    {
-                        type: 'number',
-                        min: 0,
-                        max: 10,
-                    },
-                ]}
-            >
-                <Input placeholder="Enter Your Number"/>
-            </Form.Item>
+
             <Form.Item
                 name="password"
                 rules={[{ required: true, message: 'Please input your password!' }]}
             >
                 <Input placeholder="Enter Your Password"/>
-            </Form.Item>
-            <Form.Item
-                name="re-password"
-                rules={[{ required: true, message: 'Please input your re-enter password!' }]}
-            >
-                <Input placeholder="Confirm Your Password"/>
             </Form.Item>
             <br/>
             <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>

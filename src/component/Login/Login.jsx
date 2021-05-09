@@ -1,6 +1,8 @@
 import React from "react";
 import "./Login.css"
 import { Form, Input, Button, Checkbox } from 'antd';
+import {useDispatch} from "react-redux";
+import {auth} from "../../Redux/Auth";
 
 const Login = () => {
     const layout = {
@@ -17,9 +19,10 @@ const Login = () => {
             span: 16,
         },
     };
-
+   const dispatch =  useDispatch();
         const onFinish = (values) => {
-            console.log('Success:', values);
+            console.log(values)
+            dispatch(auth(values.username,values.password))
         };
 
         const onFinishFailed = (errorInfo) => {
@@ -69,7 +72,7 @@ const Login = () => {
                     </Button>
                 </Form.Item>
                 <Form.Item {...tailLayout}>
-                    <Button type="primary" htmlType="submit">
+                    <Button type="primary" >
                         Create New Account
                     </Button>
                 </Form.Item>
