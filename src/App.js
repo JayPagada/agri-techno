@@ -17,7 +17,6 @@ function App() {
       <Route path="/AgriTechno/Home" exact component={HomeSub}/>
       <Route path="/AgriTechno/ProductServices" exact component={ProductsServices}/>
       <Route path="/AgriTechno/BuyerSeller" exact component={BuyerSeller}/>
-      <Route path="/AgriTechno/Contact" exact component={Contact}/>
       <Route path="/AgriTechno/ContactUs" exact component={Contact}/>
       <Route path="/AgriTechno/AboutUs" exact component={AboutUs}/>
       <Route path="/AgriTechno/Weather" exact component={Weather}/>

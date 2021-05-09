@@ -50,7 +50,7 @@ const AboutUs = () => {
           <div className="card3 card">
             <Card
               hoverable
-              style={{ width: 500 }}
+              style={{ width: 500, marginLeft: 50  }}
               cover={<img alt="example" src={image3} />}
             >
               <div className="title">Europe Street beat</div>

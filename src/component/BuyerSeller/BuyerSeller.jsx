@@ -7,6 +7,8 @@ import { Card } from "antd";
 
 const BuyerSeller = () => {
     return (
+        <div className="buyingSelling">
+            <h1>Buying</h1>
             <div className="buying">
                     <div className="card1 buyingCard">
                         <Card
@@ -43,6 +45,52 @@ const BuyerSeller = () => {
                             </div>
                         </Card>
                     </div>
+            </div>
+            <h1>Selling</h1>
+                <div className="Selling">
+                    <div className="card1 SellingCard">
+                        <Card
+                            hoverable
+                            style={{ width: 300}}
+                        >
+
+                            <div className="buyingTitle">Pesticides</div>
+                            <div className="description">  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+                            </div>
+                        </Card>
+                    </div>
+
+                    <div className="card2 SellingCard">
+                        <Card
+                            hoverable
+                            style={{ width: 300}}
+                        >
+                            <div className="buyingTitle">Crop</div>
+                            <div className="description">  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+                            </div>
+                        </Card>
+                    </div>
+                    <div className="card3 SellingCard">
+                        <Card
+                            hoverable
+                            style={{ width: 300 }}
+                        >
+                            <div className="buyingTitle">Equipment</div>
+                            <div className="description">  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+                            </div>
+                        </Card>
+                    </div>
+                    <div className="card4 SellingCard">
+                        <Card
+                            hoverable
+                            style={{ width: 300 }}
+                        >
+                            <div className="buyingTitle">Equipment</div>
+                            <div className="description">  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+                            </div>
+                        </Card>
+                    </div>
+                </div>
             </div>
     );
 };
