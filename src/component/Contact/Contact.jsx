@@ -2,12 +2,8 @@ import React from "react";
 import "./Contact.css";
 import { Form, Input, InputNumber, Button } from 'antd';
 import image from "../../assete/logo.png";
-import logo0 from "../../assete/CompanyLogo/facebook.svg";
-import logo1 from "../../assete/CompanyLogo/google.svg";
-import logo2 from "../../assete/CompanyLogo/instagram.svg";
-import logo3 from "../../assete/CompanyLogo/pinterest.svg";
-import logo4 from "../../assete/CompanyLogo/twitter.svg";
-import logo5 from "../../assete/CompanyLogo/youtube.svg";
+import {useDispatch, useSelector} from "react-redux";
+import {feedBackForm} from "../../Redux/FeedBack";
 const layout = {
   labelCol: {
     span: 8,
@@ -29,8 +25,11 @@ const validateMessages = {
 };
 
 const Contact = () => {
+    const dispatch =  useDispatch();
+    const authCheck = useSelector(state => state.auth);
   const onFinish = (values) => {
     console.log(values);
+    dispatch(feedBackForm(values.user,authCheck.token))
   };
 
   return (
@@ -66,10 +65,10 @@ const Contact = () => {
         >
           <Input placeholder="Your Email "/>
         </Form.Item><br/>
-        <Form.Item name={['user', 'Phone']} >
+        <Form.Item name={['user', 'phone']} >
           <Input placeholder="Phone"/>
         </Form.Item><br/>
-        <Form.Item name={['user', 'your Message']} >
+        <Form.Item name={['user', 'feedback']} >
           <Input.TextArea placeholder="your Message"/>
         </Form.Item>
         <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>

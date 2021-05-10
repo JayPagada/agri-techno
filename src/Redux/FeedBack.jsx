@@ -1,6 +1,6 @@
 import * as actionType from "./actionsTypes"
 import axios from "axios";
-
+import {history} from "../index";
 export const feedbackSuccess = (id,formData)=>{
     return{
         type:actionType.FEEDBACK_SUCCESS,
@@ -20,9 +20,9 @@ export const feedBackForm = (values,token)=>{
             name : values.name,
             Email : values.email,
             phone:values.phone,
-            Message:values.message
+            Message:values.feedback
         };
-        axios.post("https://agri-techno-default-rtdb.firebaseio.com/feedBackForm.json?auth="+token,formData)
+            axios.post("https://agri-techno-default-rtdb.firebaseio.com/feedBackForm.json?auth="+token,formData)
             .then(response=>{
                 dispatch(feedbackSuccess(response.data.name,formData))
                 history.push("/AgriTechno/ContactUs")
