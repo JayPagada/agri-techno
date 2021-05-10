@@ -3,6 +3,7 @@ import "./Login.css"
 import { Form, Input, Button, Checkbox } from 'antd';
 import {useDispatch} from "react-redux";
 import {auth} from "../../Redux/Auth";
+import {NavLink} from "react-router-dom";
 
 const Login = () => {
     const layout = {
@@ -63,7 +64,7 @@ const Login = () => {
                         },
                     ]}
                 >
-                    <Input placeholder="Enter Password"/>
+                    <Input.Password placeholder="Enter Password"/>
                 </Form.Item>
                 <br/>
                 <Form.Item {...tailLayout}>
@@ -72,9 +73,11 @@ const Login = () => {
                     </Button>
                 </Form.Item>
                 <Form.Item {...tailLayout}>
+                    <NavLink to="/Register">
                     <Button type="primary" >
                         Create New Account
                     </Button>
+                    </NavLink>
                 </Form.Item>
             </Form>
             </div>

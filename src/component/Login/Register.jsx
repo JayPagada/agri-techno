@@ -58,7 +58,7 @@ const Register = () => {
                 name="password"
                 rules={[{ required: true, message: 'Please input your password!' }]}
             >
-                <Input placeholder="Enter Your Password"/>
+                <Input.Password placeholder="Enter Your Password"/>
             </Form.Item>
             <br/>
             <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
