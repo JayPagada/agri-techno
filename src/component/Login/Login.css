@@ -80,3 +80,7 @@ input:focus{
     background-color: #54db54;
     border-radius: 20px ;
 }
+ a{
+    text-decoration: none;
+    color: black;
+}

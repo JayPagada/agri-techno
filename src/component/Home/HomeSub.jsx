@@ -6,6 +6,7 @@ import Research from "../../assete/Research.png"
 import homeAboutUs from "../../assete/homeAboutUs.jpg"
 import NewsImg from "../../assete/argitechno4.jpg"
 import {Button} from "antd";
+import {NavLink} from "react-router-dom";
 const HomeSub = () => {
 return(
     <div className="containerHomeSub">
@@ -53,7 +54,9 @@ return(
                         products&all type of Services.
                         Agri-Techno is that type of web-site in this we provide a marketing yard crop prize list and other information</p>
                     <Button>
+                        <NavLink to="/AgriTechno/AboutUs">
                         Read More
+                        </NavLink>
                     </Button>
                 </div>
             </div>
@@ -64,14 +67,14 @@ return(
                 <h2>title</h2>
                 <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy.
                     Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
-                <Button>Read More</Button>
+                <Button onClick="https://zeenews.india.com/tags/indian-agriculture.html">Read More</Button>
                 </div>
                 <div className="news2">
                 <img src={NewsImg}/>
                 <h2>title</h2>
                 <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy.
                     Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
-                <Button>Read More</Button>
+                <Button onClick="https://zeenews.india.com/tags/indian-agriculture.html">Read More</Button>
                 </div>
             </div>
         </div>

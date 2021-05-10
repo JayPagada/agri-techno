@@ -1,10 +1,13 @@
 import React from "react";
 import { Layout, Menu,Button } from 'antd';
 import "./Navbar.css"
+import {useDispatch} from "react-redux";
 import {NavLink} from "react-router-dom";
 import image from "../../assete/logo.png";
+import {logout} from "../../Redux/Auth";
 const { Header } = Layout;
 const Navbar = ()=>{
+    const dispatch = useDispatch()
     return (
         <Header className="fix-topbar">
             <div className="logo">
@@ -55,6 +58,11 @@ const Navbar = ()=>{
                     </Menu.Item>
 
             </Menu>
+            <div className="logout">
+            <Button type="primary" onClick={()=>{dispatch(logout())}}>
+                 Log Out
+            </Button>
+            </div>
         </Header>
     );
 }

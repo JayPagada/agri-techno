@@ -1,6 +1,15 @@
 .logo {
     float: left;
 }
+.logout{
+    float: right;
+    margin-top: -85px;
+}
+.logout Button{
+    font-size: 1.1em;
+    border: 1px solid black;
+    cursor: pointer;
+}
 .fix-topbar {
     position: fixed;
     width: 100%;
@@ -13,6 +22,7 @@
   list-style: none;
     display: flex;
     flex-direction: row;
+    width: 80%;
 }
 .menuItem li{
     position: relative;

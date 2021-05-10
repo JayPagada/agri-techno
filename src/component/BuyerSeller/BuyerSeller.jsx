@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./BuyerSeller.css";
 import image1 from "../../assete/agriculture1.jpg";
 import image2 from "../../assete/agriculture2.jpg";

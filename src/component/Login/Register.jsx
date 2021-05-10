@@ -14,18 +14,14 @@ const Register = () => {
         },
     };
     const validateMessages = {
-        required: '${label} is required!',
+        required: 'name is required!',
         types: {
-            email: '${label} is not a valid email!',
-            number: '${label} is not a valid number!',
+            email: 'email is not a valid email!',
         },
-        number: {
-            range: '${label} must be between ${min} and ${max}',
-        },
+
     };
     const dispatch =  useDispatch();
     const onFinish = (values) => {
-            console.log( values.user.email ,values.password,values.user.name);
         dispatch(auth(values.user.email,values.password ,values.user.name,true))
         };
 
