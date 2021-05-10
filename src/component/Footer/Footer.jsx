@@ -21,12 +21,12 @@ const Footer = () => {
             <h5>© 2019 by AgriTechno. </h5>
         </div>
         <div className="allLogos">
-            <img className="logo0" src={logo0}/>
-            <img className="logo1" src={logo1}/>
-            <img className="logo2" src={logo2}/>
-            <img className="logo3" src={logo3}/>
-            <img className="logo4" src={logo4}/>
-            <img className="logo5" src={logo5}/>
+            <img className="logo0" src={logo0} alt="wait for some time"/>
+            <img className="logo1" src={logo1} alt="wait for some time"/>
+            <img className="logo2" src={logo2} alt="wait for some time"/>
+            <img className="logo3" src={logo3} alt="wait for some time"/>
+            <img className="logo4" src={logo4} alt="wait for some time"/>
+            <img className="logo5" src={logo5} alt="wait for some time"/>
         </div>
     </footer>)
 }
