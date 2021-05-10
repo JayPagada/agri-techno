@@ -7,7 +7,7 @@
     height: 100px;
     margin-top: -100px;
     z-index: 1;
-    background: rgba(145,145,145,0.7);
+    background: #f4ece6;
 }
 .menuItem{
   list-style: none;

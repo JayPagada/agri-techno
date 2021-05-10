@@ -1,5 +1,6 @@
 .marketyardTitle h2{
     text-align: center;
+    margin-bottom: -10px;
 }
 .para1{
     margin-left: 30px;
@@ -16,27 +17,6 @@
 }
 .twobutton button{
     margin-left: 15px;
-    padding: 10px;
-}
-.marketyardImage{
-    display: flex;
-    width: 100%;
-    justify-content: center;
     align-items: center;
-}
-
-.marketyardImage img{
-    height: 200px;
-}
-.marketyardTitle h3{
-    text-align: center;
-}
-/*.marketyardPara{*/
-/*    text-align: center;*/
-/*    */
-/*}*/
-.marketyardPara p{
-
-    text-align: center;
-    justify-content: center;
+    padding: 10px;
 }
